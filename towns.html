@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Towns</title>
-	<link rel="stylesheet" href="towns.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towns Management</title>
+    <link rel="stylesheet" href="towns.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="towns.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <script src="towns.js" defer></script>
 </head>
 
 <body>
+    <h1>Towns Management</h1>
 
-<h1>Towns</h1>
-<select id="towns" size="4">
-    <option>Sofia</option>
-    <option>Plovdiv</option>
-    <option>Varna</option>
-    <option>Bourgas</option>
-</select>
+    <article>
+        <header>
+            <h1>Towns</h1>
+        </header>
+        <select id="towns" size="4">
+            <option>Sofia</option>
+            <option>Plovdiv</option>
+            <option>Varna</option>
+            <option>Bourgas</option>
+        </select>
+    </article>
 
-<div>
-    <input type="text" id="townName" />
-    <button id="btnDelete">Delete</button>
-</div>
-<div id="result"></div>
+    <article>
+        <header>
+            <h1>Delete Existing Town</h1>
+        </header>
+        <input type="text" id="townName" placeholder="Enter town name">
+        <button id="btnDelete">Delete</button>
+    </article>
 
+    <div id="result"></div>
 </body>
 
 </html>
