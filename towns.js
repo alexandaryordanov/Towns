@@ -2,6 +2,11 @@ $(document).ready(function () {
     $('#btnDelete').click(deleteTown);
 });
 
+$(document).ready(function() {
+	$('#btnAdd').click(addTown);
+});
+
+
 function deleteTown() {
     let townName = $('#townName').val(); 
     $('#townName').val(''); 
@@ -33,3 +38,12 @@ function showMessage(msg) {
         $('#result').hide('blind', {}, 500);
     }, 3000);
 }
+
+function addTown() {
+	let townName = $('#townNameForAdd').val();
+	$('#townNameForAdd').val('');
+	$('#towns').append($('<option>').text(townName));
+	$('#result').text(townName + " added.");
+}
+
+

@@ -86,3 +86,11 @@ button#btnDelete {
     font-weight: bold;
     color: #333;
 }
+select, input {
+	width: 100px;
+}
+
+footer {
+	font-family: 'Courier New', Courier, monospace;
+	color:aqua
+}
