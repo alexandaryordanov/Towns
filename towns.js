@@ -17,3 +17,5 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
+
+
